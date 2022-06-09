@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">P07_ProblemStatement</string>
+
+    <string-array name="spinnerItems">
+        <item>Add new task</item>
+        <item>Remove a task</item>
+    </string-array>
+
+    <string name="typeinnewtask">Type in new task here</string>
+    <string name="typeinindex">Type in the index of the task to be removed</string>
+    <string name="entertask">Please enter  atask</string>
+    <string name="taskempty">Task-list is empty</string>
+    <string name="enterindex">Please enter an index number</string>
+    <string name="notask">You don't have any task to remove</string>
+    <string name="wrongindex">Wrong index</string>
+
+</resources>
