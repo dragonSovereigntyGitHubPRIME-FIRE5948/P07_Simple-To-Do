@@ -8,10 +8,22 @@
 
     <string name="typeinnewtask">Type in new task here</string>
     <string name="typeinindex">Type in the index of the task to be removed</string>
-    <string name="entertask">Please enter  atask</string>
+    <string name="entertask">Please enter a task</string>
     <string name="taskempty">Task-list is empty</string>
     <string name="enterindex">Please enter an index number</string>
-    <string name="notask">You don't have any task to remove</string>
+    <string name="notask">You don\'t have any task to remove</string>
     <string name="wrongindex">Wrong index</string>
+
+
+    <string name="tasklistempty">Task-list is empty</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="Add">Add</string>
+
+    <string name="task">Task\u0020</string>
+    <string name="remove">\u0020removed</string>
+    <string name="taskadded">Task added</string>
+    <string name="taskcleared">Task(s) cleared</string>
+
 
 </resources>

@@ -85,9 +85,16 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getBaseContext(), getString(R.string.entertask), Toast.LENGTH_SHORT).show();
                 }else {
                     alToDoList.add(newEntry);
+                    //can put outside if else as well because of if statement, nothing is added anyways so no change will be made,
+                    //for btnDelete and btnClear i put .notifyDataSetChanged outside if else
+                    lvToDoList.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
+                    //
+                    Toast.makeText(getBaseContext(), getString(R.string.taskadded), Toast.LENGTH_SHORT).show();
+                    //cannot invoke method using above variable due toString()
+                    etInputString.getText().clear();
                 }
-                lvToDoList.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
+
             }
         });
 
@@ -96,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(alToDoList.isEmpty() == false) {
                     alToDoList.clear();
+                    Toast.makeText(getBaseContext(), getString(R.string.taskcleared), Toast.LENGTH_SHORT).show();
                 } else{
                     Toast.makeText(getBaseContext(), getString(R.string.taskempty), Toast.LENGTH_SHORT).show();
                 }
@@ -107,20 +115,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String indexString = etInputString.getText().toString();
+                //int index = Integer.parseInt(indexString);
 
+                //onclick button without any input, prevents crash from "" and null errors
                 if (indexString.trim().length() < 1) {
                     Toast.makeText(getBaseContext(), getString(R.string.enterindex), Toast.LENGTH_SHORT).show();
+                //checks for empty arraylist when trying to remove
                 } else if (alToDoList.isEmpty()) {
                     Toast.makeText(getBaseContext(), getString(R.string.notask), Toast.LENGTH_SHORT).show();
+                    etInputString.getText().clear();
                 } else {
-
-                    //QNS:
                     int index = Integer.parseInt(indexString);
+                    //QNS: when i put int index outside the else statement, it crashes when i press delete btn without any inputs, why? e.g. commented above
+                    //checks for minimum and maximum index (boundary testing)
                     if(alToDoList.size() < index || index <= 0) {
                         Toast.makeText(getBaseContext(), getString(R.string.wrongindex), Toast.LENGTH_SHORT).show();
-                    }
-                    else {
+                        etInputString.getText().clear();
+                        //triggers remove method if it passes above test
+                    }else {
                         alToDoList.remove(index - 1);
+                        etInputString.getText().clear();
+                        Toast.makeText(getBaseContext(), getString(R.string.task)+""+index+getString(R.string.remove), Toast.LENGTH_SHORT).show();
                     }
                 }
                 adapter.notifyDataSetChanged();
