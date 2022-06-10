@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
                         etInputString.setHint(getString(R.string.typeinnewtask));
                         btnDelete.setEnabled(false);
                         btnDelete.setAlpha(0.8f);
+                        btnAdd.setAlpha(1f);
                         btnAdd.setEnabled(true);
-
                         //can set 2 views as well
                         //etInputString.setVisibility(View.GONE/VISIBLE);
                         etInputString.setInputType(InputType.TYPE_CLASS_TEXT);
@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                         etInputString.setHint(getString(R.string.typeinindex));
                         btnAdd.setEnabled(false);
                         btnAdd.setAlpha(.8f);
+                        btnDelete.setAlpha(1f);
                         btnDelete.setEnabled(true);
                         etInputString.setInputType(InputType.TYPE_CLASS_NUMBER);
                         break;
@@ -213,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
             //Light
         } else if (id == R.id.Light) {
             loMain.setBackgroundColor(this.getResources().getColor(R.color.theme2pri));
-            lvToDoList.setBackgroundColor(this.getResources().getColor(R.color.theme2pri));
+            lvToDoList.setBackgroundColor(this.getResources().getColor(R.color.cream));
             etInputString.setBackgroundColor(this.getResources().getColor(R.color.theme2sec));
             tvEmpty.setTextColor(this.getResources().getColor(R.color.black));
             btnAdd.setBackgroundColor(this.getResources().getColor(R.color.theme2btn));
@@ -259,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem option) {
 
         if (option.getItemId() == 0){
-            //
+           //
         }
         return true;
     }

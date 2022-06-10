@@ -7,7 +7,7 @@
     </string-array>
 
     <string name="typeinnewtask">Type in new task here</string>
-    <string name="typeinindex">Type in the index of the task to be removed</string>
+    <string name="typeinindex">Type in the index of the task</string>
     <string name="entertask">Please enter a task</string>
     <string name="taskempty">Task-list is empty</string>
     <string name="enterindex">Please enter an index number</string>

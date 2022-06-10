@@ -17,7 +17,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="12pt" />
+        android:textSize="13pt" />
 
     <Spinner
         android:id="@+id/spinner"
