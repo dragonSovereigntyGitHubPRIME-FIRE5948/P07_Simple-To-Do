@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Light"
+        android:orderInCategory="0"
+        android:title="Light Theme" />
+    <item
+        android:id="@+id/Dark"
+        android:orderInCategory="1"
+        android:title="Dark Theme" />
+
+    <item
+        android:id="@+id/CrazyBomb"
+        android:orderInCategory="2"
+        android:title="Crazy Bomb Theme" />
+
+    <item
+        android:id="@+id/Coral"
+        android:orderInCategory="3"
+        android:title="Coral Theme" />
+</menu>
