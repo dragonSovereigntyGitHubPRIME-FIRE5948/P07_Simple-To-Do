@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="DarkTheme2" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/theme1sec</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:listSelector">@color/purple_200</item>
+    </style>
+
 </resources>

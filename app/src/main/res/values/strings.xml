@@ -15,7 +15,7 @@
     <string name="wrongindex">Wrong index</string>
 
 
-    <string name="tasklistempty">Task-list is empty</string>
+    <string name="tasklistempty">Task-list\nempty</string>
     <string name="delete">Delete</string>
     <string name="clear">Clear</string>
     <string name="Add">Add</string>
@@ -24,6 +24,5 @@
     <string name="remove">\u0020removed</string>
     <string name="taskadded">Task added</string>
     <string name="taskcleared">Task(s) cleared</string>
-
 
 </resources>
